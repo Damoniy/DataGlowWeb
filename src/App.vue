@@ -1,18 +1,33 @@
 <template>
-  <v-app>
-    <v-main>
-      <router-view/>
-    </v-main>
-  </v-app>
+	<v-app>
+		<div style="background-color: #F9ECFF;">
+
+		<ApplicationBar/>
+		<SideMenu/>
+
+		</div>
+	</v-app>
 </template>
 
 <script>
 
-export default {
-  name: 'App',
+import ApplicationBar from '@/components/ApplicationBar.vue';
+import SideMenu from '@/components/SideMenu.vue';
 
-  data: () => ({
-    //
-  }),
+export default {
+	name: 'App',
+	data: () => ({
+	}),
+	components: {
+		ApplicationBar,
+		SideMenu
+	},
+	methods: {
+
+	}
 }
 </script>
+
+<style>
+
+</style>
